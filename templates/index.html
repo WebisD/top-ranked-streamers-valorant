@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Best Streamers Valorant</title>
+  </head>
+  <body>
+    <header id="landpage">
+      <h1>WATCH VALORANT</h1>
+      <p>Top Rank Streamers in Valorant</p>
+      <a href="https://github.com/WebisD" target="_blank" class="button"
+        ><i class="fa fa-github"></i> Webis</a
+      >
+    </header>
+
+    <br />
+    <section id="info">
+      <p>
+        This table contains the top rankings in competitive mode of Valorant and
+        their respective lives on twitch
+      </p>
+    </section>
+    <br />
+
+    <section id="show-players">
+      <table>
+        <thead>
+          <tr>
+            {% for i in range(0,len) %}
+            <th>{{ dispcolnames[i] }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for player in players %}
+          <tr>
+            {% for i in range(0,len) %}
+              {% if colnames[i] == "twitchAaccount"%}
+                <td>
+                  <a href="https://www.twitch.tv/" target="_blank"><i class="fa fa-twitch"></i> {{ player[colnames[i]] }}</a>
+                </td>
+              {% else %}
+                <td>{{ player[colnames[i]] }}</td>
+              {% endif %}
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#landpage{
+    background-image: url("../images/logo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#landpage h1{
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+#landpage p{
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+#landpage .button{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: black 2px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position:absolute;
+    top:5vh;
+    right:5vh;
+}
+
+#landpage .button:hover{
+    background-color: white;
+    color: black;
+}
+
+#show-players{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px gray;
+    background-color: white;
+    text-align: left;
+    overflow: hidden;
+   
+} 
+thead{
+    box-shadow: 0 5px 10px gray;
+}
+
+th{
+   padding: 1rem 2rem; 
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+   font-size: 0.7rem;
+   font-weight: 900;
+}
+
+td{
+    padding: 1rem 2rem;
+}
+
+tr{
+    transition: all .2s ease-in;
+    cursor: crosshair;
+}
+
+tr:hover{
+    background-color: white;
+    transform: scale(1.02);
+    box-shadow: 0 2.5px 3px gray;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(189, 119, 255);
+}
+table tr:nth-child(even) td{
+    background-color: #F2F5FC;
+
+}
