@@ -29,6 +29,3 @@ def get_top_rank(top_size):
     display_column_names = ["Rank", "Nickname",  "Twitch Account"]
 
     return display_column_names, column_names, players
-
-
-res = (get_top_rank(top_size=5))
