@@ -1,6 +1,6 @@
 import requests
 
-api_key = "RGAPI-8a6ecc4d-eeae-4085-884e-e4c8d51aeffe"
+api_key = "RGAPI-393086ef-6b6a-40e7-83b3-f1549cab563a"
 
 def get_current_act():
     request_url = f"https://br.api.riotgames.com/val/content/v1/contents?locale=pt-BR&api_key={api_key}"

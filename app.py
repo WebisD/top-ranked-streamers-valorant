@@ -9,4 +9,4 @@ def index():
     return render_template("index.html", players = result, len=len(column_names), colnames=column_names, dispcolnames=display_column_names)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
